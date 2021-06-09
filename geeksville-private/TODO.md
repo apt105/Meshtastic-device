@@ -2,25 +2,22 @@
 
 You probably don't care about this section - skip to the next one.
 
-## before next release
-
-* fix python tool problem with windows and the heartbeat
+* list portduino on platformio
+* router mode dropping messages? https://meshtastic.discourse.group/t/router-mode-missing-messages/3329/3
 * fix ttgo eink screen
-* fix this sleep problem: https://meshtastic.discourse.group/t/new-device-release-1-2-30-ready-for-alpha-testing/3272/13?u=geeksville
-* make native sim not touch hardware
-* reenable sim in CI builds
 * figure our wss for mqtt.meshtastic - use cloudflare? 2052 ws, 2053 crypt
-* release android APK - fix recent 1.2.28 crash report
-* turn on setTx(timeout) and   state = setDioIrqParams(SX126X_IRQ_TX_DONE | SX126X_IRQ_TIMEOUT, SX126X_IRQ_TX_DONE | SX126X_IRQ_TIMEOUT); in sx1262 code
+* measure rak4630 power draw and turn off power for GPS most of the time.  We should be able to run on the small solar panel.
 * pine64 lora module
 * @havealoha fixedposition not working
-* @luxonn reports that after a while the android app stops showing new messages
 * ask for vercel access
 * finish plan for riot.im
-
+* turn on setTx(timeout) and   state = setDioIrqParams(SX126X_IRQ_TX_DONE | SX126X_IRQ_TIMEOUT, SX126X_IRQ_TX_DONE | SX126X_IRQ_TIMEOUT); in sx1262 code
 * add rak4600 support (with rf95 radio and limited ram)
-
+* store esp32 crashes to flash (and 64KB coredump partition) - https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/core_dump.html
+* 
 * Switch to use https://github.com/adafruit/Adafruit_nRF52_Arduino.git when available (see arduino code for examples)
+* DONE @luxonn reports that after a while the android app stops showing new messages
+* DONE release android APK - fix recent 1.2.28 crash report
 * DONE remote admin busted? 
 * DONE check android code - @havealoha comments about odd sleep behavior
 * ABANDONED test github actions locally on linux
